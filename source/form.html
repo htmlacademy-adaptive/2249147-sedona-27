@@ -58,42 +58,42 @@
         <h2 class="visually-hidden">Форма отзыва.</h2>
         <form class="review__form data-input" action="https://echo.htmlacademy.ru/" method="post">
           <ul class="data-input__list">
-            <li class="data-input__item">
-              <h3 class="data-input__title">Представьтесь:</h3>
-              <p class="data-input__group">
-                <label class="form-label" for="review-name">
+            <li class="data-input__item input-name">
+              <h3 class="input-name__title">Представьтесь:</h3>
+              <p class="input-name__group">
+                <label class="input-name__label" for="review-name">
                   Имя*:</label>
                 <input class="field" type="text" id="review-name" name="review-name" placeholder="Имя">
               </p>
-              <p class="form__group">
-                <label class="form-label" for="review-surname">
+              <p class="input-name__group">
+                <label class="input-name__label" for="review-surname">
                   Фамилия*:</label>
                 <input class="field" type="text" id="review-surname" name="review-surname" placeholder="Фамилия">
               </p>
-              <p class="form__group">
-                <label class="form-label" for="review-patronymic">
+              <p class="input-name__group">
+                <label class="input-name__label" for="review-patronymic">
                   Отчество:</label>
                 <input class="field" type="text" id="review-patronymic" name="review-patronymic" placeholder="Отчество">
               </p>
             </li>
 
-            <li class="data-input__item">
-              <h3 class="form__title">Контактная информация:</h3>
-              <p class="form__group">
-                <label class="form-label" for="review-phone">
+            <li class="data-input__item input-contacts">
+              <h3 class="input-contacts__title">Контактная информация:</h3>
+              <p class="input-contacts__group">
+                <label class="input-contacts__label" for="review-phone">
                   Контактный телефон*:</label>
                 <input class="field" type="text" id="review-phone" name="review-phone" placeholder="Введите телефон">
               </p>
-              <p class="form__group">
-                <label class="form-label" for="review-e-mail">
+              <p class="input-contacts__group">
+                <label class="input-contacts__label" for="review-e-mail">
                   Электронная почта*:</label>
                 <input class="field" type="email" id="review-e-mail" name="review-e-mail" placeholder="Введите e-mail">
               </p>
             </li>
 
-            <li class="data-input__item">
-              <h3 class="form__title">Ваше общее впечатление:</h3>
-              <fieldset class="form__fieldset switcher">
+            <li class="data-input__item input-radio">
+              <h3 class="input-radio__title">Ваше общее впечатление:</h3>
+              <fieldset class="input-radio__fieldset switcher">
                 <ul class="switcher__list">
                   <li class="switcher__item">
                     <label class="switcher__control">
@@ -120,9 +120,9 @@
               </fieldset>
             </li>
 
-            <li class="data-input__item">
-              <h3 class="form__title">Посещенные достопримечательности:</h3>
-              <fieldset class="form__fieldset selector">
+            <li class="data-input__item input-checkbox">
+              <h3 class="input-checkbox__title">Посещенные достопримечательности:</h3>
+              <fieldset class="input-checkbox__fieldset selector">
                 <ul class="selector__list">
                   <li class="selector__item">
                     <label class="selector__control">
@@ -156,9 +156,9 @@
               </fieldset>
             </li>
 
-            <li class="data-input__item">
-              <h3 class="form__title">Опишите свои эмоции:</h3>
-              <textarea class="form__emotions" name="emotions-comment" rows="5" cols="30">Опишите подробно все свои восторги</textarea>
+            <li class="data-input__item input-text">
+              <h3 class="input-text__title">Опишите свои эмоции:</h3>
+              <textarea class="input-text__emotions" name="emotions-comment" rows="5" cols="30">Опишите подробно все свои восторги</textarea>
             </li>
           </ul>
           <button class="data-input__button button" type="submit">Отправить отзыв</button>
