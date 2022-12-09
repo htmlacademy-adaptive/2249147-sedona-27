@@ -1,3 +1,24 @@
-.main-header {
-  color: #000000;
+// .main-header {
+//   position: relative;
+// }
+
+.main-header__logo {
+  display: block;
+  width: 185px;
+  height: 96px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -92px;
+}
+
+.main-nav__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+@media (max-width: @mobile-width-only) {
+  .main-nav__list {
+    display: none;
+  }
 }
