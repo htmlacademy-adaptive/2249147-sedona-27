@@ -17,22 +17,25 @@
 
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a href="index.html">
+            <li class="site-list__item site-list__item--main site-list__item--active">
+              <a>
                 Главная
               </a>
             </li>
-            <li class="site-list__item">
+
+            <li class="site-list__item site-list__item--catalog">
               <a href="catalog.html">
                 Фото и видео
               </a>
             </li>
-            <li class="site-list__item site-list__item--active">
-              <a>
+
+            <li class="site-list__item site-list__item--form">
+              <a href="form.html">
                 Форма Отзыва
               </a>
             </li>
-            <li class="site-list__item">
+
+            <li class="site-list__item site-list__item--htmlacademy">
               <a href="https://htmlacademy.ru/intensive/adaptive">
                 HTML ACADEMY
               </a>
@@ -59,7 +62,7 @@
         <h2 class="visually-hidden">Форма отзыва.</h2>
         <form class="review__form data-input" action="https://echo.htmlacademy.ru/" method="post">
           <ul class="data-input__list">
-            <li class="data-input__item input-name">
+            <li class="data-input__item data-input__item--name input-name">
               <h3 class="input-name__title">Представьтесь:</h3>
               <p class="input-name__group">
                 <label class="input-name__label" for="review-name">
@@ -78,7 +81,7 @@
               </p>
             </li>
 
-            <li class="data-input__item input-contacts">
+            <li class="data-input__item data-input__item--contacts input-contacts">
               <h3 class="input-contacts__title">Контактная информация:</h3>
               <p class="input-contacts__group">
                 <label class="input-contacts__label" for="review-phone">
@@ -92,7 +95,7 @@
               </p>
             </li>
 
-            <li class="data-input__item input-radio">
+            <li class="data-input__item data-input__item--radio input-radio">
               <h3 class="input-radio__title">Ваше общее впечатление:</h3>
               <fieldset class="input-radio__fieldset switcher">
                 <ul class="switcher__list">
@@ -121,7 +124,7 @@
               </fieldset>
             </li>
 
-            <li class="data-input__item input-checkbox">
+            <li class="data-input__item data-input__item--checkbox input-checkbox">
               <h3 class="input-checkbox__title">Посещенные достопримечательности:</h3>
               <fieldset class="input-checkbox__fieldset selector">
                 <ul class="selector__list">
@@ -157,7 +160,7 @@
               </fieldset>
             </li>
 
-            <li class="data-input__item input-text">
+            <li class="data-input__item data-input__item--text input-text">
               <h3 class="input-text__title">Опишите свои эмоции:</h3>
               <textarea class="input-text__emotions" name="emotions-comment" rows="5" cols="30">Опишите подробно все свои восторги</textarea>
             </li>

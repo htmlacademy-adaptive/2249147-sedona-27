@@ -1,3 +1,17 @@
 .main-nav {
-  color: #000000;
+  padding: 0;
+  margin: 0;
+  min-height: 56px;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav__toggle {
+    display: none;
+  }
+}
+
+@media (max-width: @tablet-width) {
+  .main-nav__wrapper {
+    display: none;
+  }
 }

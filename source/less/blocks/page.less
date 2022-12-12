@@ -1,28 +1,19 @@
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
 .page {
   background-color: @color-back;
-}
-
-.page__body {
   font-family: @font-main;
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: @font-size-default;
   line-height: 21px;
   color: @color-text-main;
-  background-color: @color-background;
   text-transform: uppercase;
   text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.page__body {
+  background-color: @color-background;
   max-width: 1200px;
   margin: auto;
 }

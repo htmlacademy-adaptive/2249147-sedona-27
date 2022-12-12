@@ -2,4 +2,38 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+@media (max-width: @mobile-width-only) {
+  .site-list {
+    background-color: @color-main;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.site-list__item {
+  height: 56px;
+}
+
+.site-list__item--main {
+  grid-column: 1 / 2;
+}
+
+.site-list__item--catalog {
+  grid-column: 2 / 3;
+}
+
+.site-list__item--form {
+  grid-column: 4 / 5;
+}
+
+.site-list__item--htmlacademy {
+  grid-column: 5 / 6;
 }
