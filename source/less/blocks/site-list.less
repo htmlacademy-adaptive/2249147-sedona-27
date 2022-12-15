@@ -2,38 +2,87 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
 }
 
 @media (max-width: @mobile-width-only) {
   .site-list {
     background-color: @color-main;
     width: 100%;
-    position: absolute;
-    top: 0;
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
+  }
+
+  .site-list li:not(:first-child) {
+    border-top: 1px solid fade(#ffffff, 20%);
+  }
+
+  .site-list li:not(:last-child) {
+    border-bottom: 1px solid fade(#010101, 20%);
+  }
+
+  .site-list__item:hover {
+    background-color: @color-mobile-menu-hoover;
+  }
+
+  .site-list li:active {
+    background-color: @color-mobile-menu-active;
+  }
+
+  .site-list a {
+    display: block;
+    padding: 17px 56px 12px;
+    font-weight: 700;
+    font-size: @font-size-lardge;
+    line-height: 26px;
+    color: @color-text-secondary;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: @color-main;
+  }
+
+  .site-list a:hover {
+    color: @color-text-secondary;
+  }
+
+  .site-list a:active {
+    color: fade(@color-text-secondary, 30%);
   }
 }
 
-.site-list__item {
-  height: 56px;
-}
+@media (min-width: @tablet-width) {
+  .site-list {
+    padding: 18px 5px 17px;
+    font-weight: 700;
+    font-size: @font-size-default;
+    line-height: 21px;
+    color: @color-text-main;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: @color-background;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-content: center;
+  }
 
-.site-list__item--main {
-  grid-column: 1 / 2;
-}
+  .site-list__item {
+    height: 56px;
+  }
 
-.site-list__item--catalog {
-  grid-column: 2 / 3;
-}
+  .site-list__item--main {
+    grid-column: 1 / 2;
+  }
 
-.site-list__item--form {
-  grid-column: 4 / 5;
-}
+  .site-list__item--catalog {
+    grid-column: 2 / 3;
+  }
 
-.site-list__item--htmlacademy {
-  grid-column: 5 / 6;
+  .site-list__item--form {
+    grid-column: 4 / 5;
+  }
+
+  .site-list__item--htmlacademy {
+    grid-column: 5 / 6;
+  }
+
+  .site-list__item--active {
+    color: @color-menu-active;
+  }
 }
