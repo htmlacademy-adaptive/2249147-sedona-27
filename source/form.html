@@ -12,13 +12,13 @@
         <img class="main-header__logo-image" src="img/logo-header-sedona.svg" width="185" height="96" alt="Городок «Седона».">
       </a>
 
-      <nav class="main-nav">
-        <button class="main-nav__toggle main-nav--opened main-nav--nojs" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <nav class="main-nav main-nav--nojs">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
 
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--main site-list__item--active">
-              <a href="index.html>
+            <li class="site-list__item site-list__item--main">
+              <a href="index.html">
                 Главная
               </a>
             </li>
@@ -29,8 +29,8 @@
               </a>
             </li>
 
-            <li class="site-list__item site-list__item--form">
-              <a href="form.html">
+            <li class="site-list__item site-list__item--form site-list__item--current">
+              <a>
                 Форма Отзыва
               </a>
             </li>
@@ -201,5 +201,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
