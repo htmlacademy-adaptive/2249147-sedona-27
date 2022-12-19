@@ -1,0 +1,30 @@
+.button {
+  font-weight: 700;
+  font-size: @font-size-lardge;
+  line-height: 26px;
+  color: @color-text-secondary;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: @color-main;
+  border: none;
+  cursor: pointer;
+  margin: 0;
+  padding: 16px;
+
+  &:hover {
+    background-color: @color-mobile-menu-hoover;
+  }
+
+  &:active {
+    background-color: @color-mobile-menu-active;
+    color: @color-text-button-active;
+  }
+
+  &:disabled {
+    background-color: @color-button-disabled;
+    color: @color-text-secondary;
+  }
+}
