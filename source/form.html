@@ -62,8 +62,8 @@
         <h2 class="visually-hidden">Форма отзыва.</h2>
         <form class="review__form data-input" action="https://echo.htmlacademy.ru/" method="post">
           <ul class="data-input__list">
-            <li class="data-input__item data-input__item--name input-name">
-              <h3 class="input-name__title">Представьтесь:</h3>
+            <li class="data-input__item input-name">
+              <h3 class="data-input__title input-name__title">Представьтесь:</h3>
               <p class="input-name__group">
                 <label class="input-name__label" for="review-name">
                   Имя*:</label>
@@ -81,8 +81,8 @@
               </p>
             </li>
 
-            <li class="data-input__item data-input__item--contacts input-contacts">
-              <h3 class="input-contacts__title">Контактная информация:</h3>
+            <li class="data-input__item input-contacts">
+              <h3 class="data-input__title input-contacts__title">Контактная информация:</h3>
               <p class="input-contacts__group">
                 <label class="input-contacts__label" for="review-phone">
                   Контактный телефон*:</label>
@@ -95,8 +95,8 @@
               </p>
             </li>
 
-            <li class="data-input__item data-input__item--radio input-radio">
-              <h3 class="input-radio__title">Ваше общее впечатление:</h3>
+            <li class="data-input__item input-radio">
+              <h3 class="data-input__title input-radio__title">Ваше общее впечатление:</h3>
               <fieldset class="input-radio__fieldset switcher">
                 <ul class="switcher__list">
                   <li class="switcher__item">
@@ -124,8 +124,8 @@
               </fieldset>
             </li>
 
-            <li class="data-input__item data-input__item--checkbox input-checkbox">
-              <h3 class="input-checkbox__title">Посещенные достопримечательности:</h3>
+            <li class="data-input__item input-checkbox">
+              <h3 class="data-input__title input-checkbox__title">Посещенные достопримечательности:</h3>
               <fieldset class="input-checkbox__fieldset selector">
                 <ul class="selector__list">
                   <li class="selector__item">
@@ -160,15 +160,21 @@
               </fieldset>
             </li>
 
-            <li class="data-input__item data-input__item--text input-text">
-              <h3 class="input-text__title">Опишите свои эмоции:</h3>
-              <textarea class="input-text__emotions" name="emotions-comment" rows="5" cols="30">Опишите подробно все свои восторги</textarea>
+            <li class="data-input__item input-text">
+              <h3 class="data-input__title input-text__title">Опишите свои эмоции:</h3>
+              <textarea class="input-text__emotions" name="emotions-comment" placeholder="Опишите подробно все свои восторги"></textarea>
             </li>
+
+            <!-- <li class="data-input__item input-button"> -->
+              <button class="data-input__button button" type="submit">Отправить отзыв</button>
+            <!-- </li> -->
+
+            <!-- <li class="data-input__item input-intro"> -->
+              <span class="data-input__legend">
+                * — обязательные поля
+              </span>
+            <!-- </li> -->
           </ul>
-          <button class="data-input__button button" type="submit">Отправить отзыв</button>
-          <span class="data-input__legend">
-            * — обязательные поля
-          </span>
         </form>
       </section>
     </main>
