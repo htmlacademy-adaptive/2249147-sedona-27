@@ -1,5 +1,6 @@
 .cards {
-  padding: 0 20px;
+  text-align: left;
+  fill: @color-text-main;
 }
 
 .cards__list {
@@ -7,31 +8,141 @@
   padding: 0;
   list-style-type: none;
 
-  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+  @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
 
   @media (min-width: @desktop-width) {
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
 .cards__item {
+  padding: 24px 0;
+  position: relative;
+
+  @media (max-width: @mobile-width-only) {
+    &::before {
+      content: "";
+      position: absolute;
+      left: -20px;
+      right: -20px;
+      top: 0;
+      height: 1px;
+      background-color: @color-cards-underline;
+    }
+
+    &:last-child::after {
+      content: "";
+      position: absolute;
+      left: -20px;
+      right: -20px;
+      bottom: 0;
+      height: 1px;
+      background-color: @color-cards-underline;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
+
   &:first-child {
     grid-column: 1 / -1;
   }
 }
 
+.cards__foto {
+  display: block;
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    height: 267px;
+  }
+}
+
+.cards__item:first-child .cards__foto {
+  @media (min-width: @tablet-width) {
+    height: 400px;
+  }
+}
+
+
+.cards__foto-title-container {
+  margin-top: 15px;
+
+  @media (min-width: @tablet-width) {
+    background-color: @color-back;
+    padding: 22px 20px 15px;
+    margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: @color-cards-desktop-background-name;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    position: absolute;
+    color: @color-text-secondary;
+  }
+}
+
+.cards__name-container {
+  margin-bottom: 11px;
+}
+
 .cards__title {
+  margin: 0;
+  margin-bottom: 1px;
   font-weight: 700;
 }
 
+.cards__author {
+  margin: 0;
+  text-transform: none;
+}
+
 .cards__author-name {
+  margin: 0;
   font-style: normal;
 }
 
 .cards__likes {
   font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.cards__likes-button {
+  background-color: @color-background-clear;
+  width: 23px;
+  height: 21px;
+  box-sizing: border-box;
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-right: 14px;
+}
+
+.cards__likes-icon {
+  fill: @color-text-menu-active;
+
+  @media (min-width: @desktop-width) {
+    fill: @color-text-secondary;
+  }
+}
+
+.likes__number-of-likes {
+  margin-top: 10px;
 }
