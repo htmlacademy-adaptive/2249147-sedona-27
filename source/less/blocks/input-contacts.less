@@ -12,10 +12,26 @@
   flex-direction: column;
 
   @media (min-width: @tablet-width) {
-    // padding-left: 44px;
+    padding-left: 44px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 64px;
   }
 }
 
 .input-contacts__label {
   padding-left: 16px;
+}
+
+.input-contacts__field-phone {
+  background-image: url("../img/phone.svg");
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+
+.input-contacts__field-e-mail {
+  background-image: url("../img/e-mail.svg");
+  background-repeat: no-repeat;
+  background-position: center right;
 }

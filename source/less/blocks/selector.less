@@ -1,10 +1,63 @@
 .selector {
   border: none;
+  margin: 0;
 }
 
 .selector__list {
   padding: 0;
   list-style-type: none;
+  display: grid;
+  row-gap: 16px;
+  justify-items: start;
+  grid-template-columns: repeat(1, 1fr);
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 84px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0;
+  }
+}
+
+.selector__control {
+  position: relative;
+  display: block;
+  padding: 10px 0 10px 62px;
+}
+
+.selector__mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 46px;
+  height: 46px;
+  border-radius: 4px;
+  background-color: @color-back;
+}
+
+.selector__input:hover ~ .selector__mark {
+  background-color: @color-field-hover;
+}
+
+.selector__input:active ~ .selector__mark {
+  background-color: @color-field-active;
+}
+
+.selector__input[type="checkbox"]:checked + .selector__mark::after {
+  position: absolute;
+  top: 15px;
+  left: 12px;
+  width: 22px;
+  height: 16px;
+  background-image: url("../img/tick.svg");
+  content: "";
+}
+
+.selector__input:active + .selector__mark::before {
+  opacity: 0.3;
 }
 
 .selector__label {

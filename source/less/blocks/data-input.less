@@ -55,10 +55,22 @@
   font-size: @font-size-lardge;
   line-height: 26px;
   margin-bottom: 4px;
-  max-width: 350px;
+  width: 400px;
   position: relative;
 }
 
 .data-input__button {
   width: 100%;
+}
+
+.data-input__legend {
+  display: block;
+  margin-top: 6px;
+  text-align: right;
+  font-size: @font-size-small;
+  color: @color-text-legend;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 23px;
+  }
 }
