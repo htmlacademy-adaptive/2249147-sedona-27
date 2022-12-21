@@ -1,0 +1,39 @@
+.input-checkbox {
+  @media (min-width: @tablet-width) {
+    grid-column: 1 / -1;
+  }
+}
+
+.input-checkbox__title {
+  @media (min-width: @tablet-width) {
+    &::before {
+      content: "";
+      position: absolute;
+      left: -125px;
+      right: 100%;
+      top: 50%;
+      height: 1px;
+      background-color: @color-cards-underline;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 100%;
+      right: -125px;
+      top: 50%;
+      height: 1px;
+      background-color: @color-cards-underline;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &::before {
+      left: -50%;
+    }
+
+    &::after {
+      right: -50%;
+    }
+  }
+}

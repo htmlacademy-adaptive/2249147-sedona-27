@@ -1,0 +1,19 @@
+.welcome {
+  background-image: url("../img/welcome-mask.svg"), url("../img/welcome-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom, center bottom;
+  background-color: #3d4045;
+  padding: 0 18px;
+
+  @media (min-width: @tablet-width) {
+    background-size: auto, auto;
+    padding: 0 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 120px;
+  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

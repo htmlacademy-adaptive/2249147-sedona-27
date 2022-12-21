@@ -1,0 +1,56 @@
+.input-text {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    grid-column: 1 / -1;
+  }
+}
+
+.input-text__title {
+  @media (min-width: @tablet-width) {
+    &::before {
+      content: "";
+      position: absolute;
+      left: -125px;
+      right: 100%;
+      top: 50%;
+      height: 1px;
+      background-color: @color-cards-underline;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 100%;
+      right: -125px;
+      top: 50%;
+      height: 1px;
+      background-color: @color-cards-underline;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &::before {
+      left: -50%;
+    }
+
+    &::after {
+      right: -50%;
+    }
+  }
+}
+
+.input-text__emotions {
+  border: none;
+  background-color: #f2f2f2;
+  color: #000000;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  padding: 16px;
+  height: 150px;
+  width: 100%;
+}
