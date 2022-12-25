@@ -55,8 +55,21 @@
   font-size: @font-size-lardge;
   line-height: 26px;
   margin-bottom: 4px;
-  width: 400px;
-  position: relative;
+  width: 100%;
+}
+
+.data-input__title_big {
+  display: grid;
+  grid-template-columns: 1fr 400px 1fr;
+  align-items: center;
+
+  &::after,
+  &::before {
+    content: "";
+    display: block;
+    height: 1px;
+    background: @color-cards-underline;
+  }
 }
 
 .data-input__button {
