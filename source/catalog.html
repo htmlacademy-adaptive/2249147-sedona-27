@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="images/favicons/apple.png">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page__body">
     <header class="main-header">
@@ -62,7 +66,11 @@
         <h2 class="visually-hidden">Каталог фотографий.</h2>
         <ul class="cards__list">
           <li class="cards__item">
-            <img class="cards__foto" src="img/fotocards/foto1.jpg" width="280" height="280" alt="Фото Бориса.">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/fotocards/photo-1-desktop.jpg 1x, img/fotocards/photo-1-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/fotocards/photo-1-tablet.jpg 1x, img/fotocards/photo-1-tablet@2x.jpg 2x">
+              <img class="cards__foto" src="img/fotocards/photo-1-mobile.jpg" srcset="img/fotocards/photo-1-mobile@2x.jpg 2x" width="280" height="280" alt="Фото Бориса.">
+            </picture>
             <div class="cards__foto-title-container">
               <div class="cards__name-container">
                 <p class="cards__title">Неродные просторы</p>
@@ -79,7 +87,11 @@
           </li>
 
           <li class="cards__item">
-            <img class="cards__foto" src="img/fotocards/foto2.jpg" width="280" height="280" alt="Фото Бориса.">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/fotocards/photo-2-desktop.jpg 1x, img/fotocards/photo-2-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/fotocards/photo-2-tablet.jpg 1x, img/fotocards/photo-2-tablet@2x.jpg 2x">
+              <img class="cards__foto" src="img/fotocards/photo-2-mobile.jpg" srcset="img/fotocards/photo-2-mobile@2x.jpg 2x" width="280" height="280" alt="Фото Сергея.">
+            </picture>
             <div class="cards__foto-title-container">
               <div class="cards__name-container">
                 <p class="cards__title">Местная растительность</p>
@@ -96,7 +108,11 @@
           </li>
 
           <li class="cards__item">
-            <img class="cards__foto" src="img/fotocards/foto3.jpg" width="280" height="280" alt="Фото Бориса.">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/fotocards/photo-3-desktop.jpg 1x, img/fotocards/photo-3-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/fotocards/photo-3-tablet.jpg 1x, img/fotocards/photo-3-tablet@2x.jpg 2x">
+              <img class="cards__foto" src="img/fotocards/photo-3-mobile.jpg" srcset="img/fotocards/photo-3-mobile@2x.jpg 2x" width="280" height="280" alt="Фото Петра.">
+            </picture>
             <div class="cards__foto-title-container">
               <div class="cards__name-container">
                 <p class="cards__title">Дорога на север</p>
@@ -113,7 +129,11 @@
           </li>
 
           <li class="cards__item">
-            <img class="cards__foto" src="img/fotocards/foto4.jpg" width="280" height="280" alt="Фото Бориса.">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/fotocards/photo-4-desktop.jpg 1x, img/fotocards/photo-4-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/fotocards/photo-4-tablet.jpg 1x, img/fotocards/photo-4-tablet@2x.jpg 2x">
+              <img class="cards__foto" src="img/fotocards/photo-4-mobile.jpg" srcset="img/fotocards/photo-4-mobile@2x.jpg 2x" width="280" height="280" alt="Фото Антона.">
+            </picture>
             <div class="cards__foto-title-container">
               <div class="cards__name-container">
                 <p class="cards__title">Мост дьявола</p>
@@ -134,8 +154,12 @@
       <section class="catching-up-block">
         <h2 class="catching-up-block__statement">Все еще сомневаетесь?</h2>
         <p class="catching-up-block__reasons">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-        <!-- <video></video> -->
-        <img class="catching-up-block__video-slide" src="img/video-presentation.jpg" width="280" height="177" alt="Видеопрезентация городка.">
+        <div class="catching-up-block__video video">
+          <button class="video__button">
+            <span class="visually-hidden">Воспроизвести видео.</span>
+          </button>
+          <video class="video__slide" poster="img/video-presentation.jpg" width="280" height="177">Видеопрезентация городка.</video>
+        </div>
       </section>
     </main>
 

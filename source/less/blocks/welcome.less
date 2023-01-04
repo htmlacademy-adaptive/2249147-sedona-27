@@ -1,18 +1,26 @@
 .welcome {
-  background-image: url("../img/welcome-mask.svg"), url("../img/welcome-background.jpg");
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/welcome-mask.svg"), url("../img/back-desktop@2x.jpg");
+  }
+
+  background-image: url("../img/welcome-mask.svg"), url("../img/back-desktop.jpg");
   background-repeat: no-repeat;
   background-position: center bottom, center bottom;
   background-color: #3d4045;
+  // background-size: auto auto;
+  object-fit: contain;
   padding: 0 18px;
 
   @media (min-width: @tablet-width) {
-    background-size: auto, auto;
+    // background-size: auto auto;
     padding: 0 60px;
   }
 
   @media (min-width: @desktop-width) {
+    // background-size: 1200px auto;
     padding: 0 120px;
   }
+
   display: flex;
   flex-direction: column;
   align-items: center;

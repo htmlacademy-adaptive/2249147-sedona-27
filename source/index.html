@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="images/favicons/apple.png">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
 
   <body class="page">
@@ -66,13 +70,17 @@
         <section class="advantages approval">
           <h2 class="visually-hidden">Преимущества.</h2>
           <ul class="approval__list">
-            <li class="approval__item approval__item--extreme">
+            <li class="approval__item approval__item--extreme approval__item--extreme-right">
               <div class="approval__container approval__container--extreme">
-                <h3 class="approval__title">Настоящий городок</h3>
+                <h3 class="approval__title">Настоящий<br> городок</h3>
                 <span class="approval__number">— №1 —</span>
                 <p class="approval__description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
               </div>
-              <img class="approval__image" src="img/town.jpg" width="320" height="260" alt="Фото домов городка Седона.">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-city-desktop.jpg 1x, img/photo-city-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-city-tablet.jpg 1x, img/photo-city-tablet@2x.jpg 2x">
+                <img class="approval__image approval__image--city" src="img/photo-city-mobile.jpg" srcset="img/photo-city-mobile@2x.jpg 2x" width="320" height="260" alt="Фото домов городка Седона.">
+              </picture>
             </li>
 
             <li class="approval__item approval__item--action">
@@ -96,8 +104,12 @@
               </div>
             </li>
 
-            <li class="approval__item approval__item--extreme">
-              <img class="approval__image" src="img/devil-bridge.jpg" width="320" height="260" alt="Фото панорамы «Моста дьявола».">
+            <li class="approval__item approval__item--extreme approval__item--extreme-left">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+                <img class="approval__image approval__image--bridge" src="img/photo-bridge-mobile.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" width="320" height="260" alt="Фото панорамы «Моста дьявола».">
+              </picture>
               <div class="approval__container approval__container--extreme">
                 <h3 class="approval__title">Там есть<br> мост дьявола</h3>
                 <span class="approval__number">— №2 —</span>

@@ -71,7 +71,6 @@
   }
 }
 
-
 .cards__foto-title-container {
   margin-top: 15px;
 
@@ -91,6 +90,12 @@
     z-index: 1;
     position: absolute;
     color: @color-text-secondary;
+  }
+}
+
+.cards__item:nth-child(2n+3) .cards__foto-title-container {
+  @media (min-width: @tablet-width) and (max-width: @tablet-width-only) {
+    background-color: @color-back-tablet-3th-card;
   }
 }
 
