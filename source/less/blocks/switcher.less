@@ -1,14 +1,69 @@
 .switcher {
   border: none;
+  margin: 0;
 }
 
 .switcher__list {
   padding: 0;
   list-style-type: none;
+  display: grid;
+  row-gap: 16px;
+  justify-items: start;
+  grid-template-columns: repeat(1, 1fr);
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 36px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 53px;
+  }
+}
+
+.switcher__control {
+  position: relative;
+  display: block;
+  padding: 10px 0 10px 62px;
+}
+
+.switcher__mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background-color: @color-back;
+}
+
+.switcher__input:hover ~ .switcher__mark {
+  background-color: @color-field-hover;
+}
+
+.switcher__input:active ~ .switcher__mark {
+  background-color: @color-field-active;
+}
+
+.switcher__input:checked + .switcher__mark::before {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 16px;
+  height: 16px;
+  background-color: @color-text-paragraph;
+  border-radius: 50%;
+  content: "";
+}
+
+.switcher__input:active + .switcher__mark::before {
+  opacity: 0.3;
 }
 
 .switcher__label {
   text-transform: none;
+  text-align: left;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;

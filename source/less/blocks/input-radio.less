@@ -5,35 +5,9 @@
 }
 
 .input-radio__title {
-  @media (min-width: @tablet-width) {
-    &::before {
-      content: "";
-      position: absolute;
-      left: -125px;
-      right: 100%;
-      top: 50%;
-      height: 1px;
-      background-color: @color-cards-underline;
-    }
+  padding: 24px 0 20px;
+}
 
-    &::after {
-      content: "";
-      position: absolute;
-      left: 100%;
-      right: -125px;
-      top: 50%;
-      height: 1px;
-      background-color: @color-cards-underline;
-    }
-  }
-
-  @media (min-width: @desktop-width) {
-    &::before {
-      left: -50%;
-    }
-
-    &::after {
-      right: -50%;
-    }
-  }
+.input-radio__fieldset {
+  padding: 0;
 }
