@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="images/favicons/apple.png">
@@ -24,7 +24,7 @@
           <div class="main-nav__wrapper">
             <ul class="main-nav__list site-list">
               <li class="site-list__item site-list__item--main site-list__item--current">
-                <a>
+                <a href="index.html">
                   Главная
                 </a>
               </li>
@@ -77,9 +77,10 @@
                 <p class="approval__description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
               </div>
               <picture>
-                <source media="(min-width: 1200px)" srcset="img/photo-city-desktop.jpg 1x, img/photo-city-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/photo-city-tablet.jpg 1x, img/photo-city-tablet@2x.jpg 2x">
-                <img class="approval__image approval__image--city" src="img/photo-city-mobile.jpg" srcset="img/photo-city-mobile@2x.jpg 2x" width="320" height="260" alt="Фото домов городка Седона.">
+                <source media="(min-width: 1200px)" srcset="img/photo-city-desktop.webp 1x, img/photo-city-desktop@2x.webp 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-city-tablet.webp 1x, img/photo-city-tablet@2x.webp 2x">
+                <img class="approval__image approval__image--city" src="img/photo-city-mobile.webp" srcset="img/photo-city-mobile@2x.webp 2x" width="320" height="260" alt="Фото домов городка Седона.">
+                <img class="approval__image approval__image--city" src="img/photo-city-mobile.jpg" width="320" height="260" alt="Фото домов городка Седона.">
               </picture>
             </li>
 
@@ -106,9 +107,9 @@
 
             <li class="approval__item approval__item--extreme approval__item--extreme-left">
               <picture>
-                <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
-                <img class="approval__image approval__image--bridge" src="img/photo-bridge-mobile.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" width="320" height="260" alt="Фото панорамы «Моста дьявола».">
+                <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop.webp 1x, img/photo-bridge-desktop@2x.webp 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet.webp 1x, img/photo-bridge-tablet@2x.webp 2x">
+                <img class="approval__image approval__image--bridge" src="img/photo-bridge-mobile.webp" srcset="img/photo-bridge-mobile@2x.webp 2x" width="320" height="260" alt="Фото панорамы «Моста дьявола».">
               </picture>
               <div class="approval__container approval__container--extreme">
                 <h3 class="approval__title">Там есть<br> мост дьявола</h3>
@@ -211,6 +212,6 @@
       </footer>
     </div>
 
-    <script src="script.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>

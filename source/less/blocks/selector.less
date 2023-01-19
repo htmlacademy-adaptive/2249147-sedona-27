@@ -46,6 +46,10 @@
   background-color: @color-field-active;
 }
 
+.selector__input:active ~ .selector__mark::after {
+  opacity: 0.3;
+}
+
 .selector__input[type="checkbox"]:checked + .selector__mark::after {
   position: absolute;
   top: 15px;
