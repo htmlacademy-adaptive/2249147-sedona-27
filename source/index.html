@@ -78,9 +78,11 @@
               </div>
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/photo-city-desktop.webp 1x, img/photo-city-desktop@2x.webp 2x">
+                <source media="(min-width: 1200px)" srcset="img/photo-city-desktop.jpg 1x, img/photo-city-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/photo-city-tablet.webp 1x, img/photo-city-tablet@2x.webp 2x">
-                <img class="approval__image approval__image--city" src="img/photo-city-mobile.webp" srcset="img/photo-city-mobile@2x.webp 2x" width="320" height="260" alt="Фото домов городка Седона.">
-                <img class="approval__image approval__image--city" src="img/photo-city-mobile.jpg" width="320" height="260" alt="Фото домов городка Седона.">
+                <source media="(min-width: 768px)" srcset="img/photo-city-tablet.jpg 1x, img/photo-city-tablet@2x.jpg 2x">
+                <source srcset="img/photo-city-mobile.webp 1x, img/photo-city-mobile@2x.webp 2x">
+                <img class="approval__image approval__image--city" src="img/photo-city-mobile.jpg" srcset="img/photo-city-mobile@2x.webp 2x" width="320" height="260" alt="Фото домов городка Седона.">
               </picture>
             </li>
 
@@ -108,8 +110,11 @@
             <li class="approval__item approval__item--extreme approval__item--extreme-left">
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop.webp 1x, img/photo-bridge-desktop@2x.webp 2x">
+                <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet.webp 1x, img/photo-bridge-tablet@2x.webp 2x">
-                <img class="approval__image approval__image--bridge" src="img/photo-bridge-mobile.webp" srcset="img/photo-bridge-mobile@2x.webp 2x" width="320" height="260" alt="Фото панорамы «Моста дьявола».">
+                <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+                <source srcset="img/photo-bridge-mobile.webp 1x, img/photo-bridge-mobile@2x.webp 2x">
+                <img class="approval__image approval__image--bridge" src="img/photo-bridge-mobile.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" width="320" height="260" alt="Фото панорамы «Моста дьявола».">
               </picture>
               <div class="approval__container approval__container--extreme">
                 <h3 class="approval__title">Там есть<br> мост дьявола</h3>
@@ -202,7 +207,7 @@
           <div class="footer__copyright copyright">
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
               <b class="copyright__text">Разработано</b>
-              <svg class="copyright__icon" width="32" height="32">
+              <svg class="copyright__icon" width="34" height="34">
                 <use xlink:href="./img/sprite.svg#icon-htmlacademy"></use>
               </svg>
               <span class="visually-hidden">HTML Academy.</span>
