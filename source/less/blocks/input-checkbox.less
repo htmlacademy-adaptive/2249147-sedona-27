@@ -2,8 +2,20 @@
   @media (min-width: @tablet-width) {
     grid-column: 1 / -1;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 38px;
+  }
 }
 
 .input-checkbox__title {
-  padding: 24px 0 20px;
+  padding: 0 0 20px;
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 52px;
+  }
+}
+
+.input-checkbox__fieldset {
+  padding: 0;
 }

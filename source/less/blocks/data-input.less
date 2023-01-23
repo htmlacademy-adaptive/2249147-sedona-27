@@ -19,15 +19,15 @@
 }
 
 .data-input__item {
-  padding: 24px 0 39px;
+  padding: 23px 0 29px;
   position: relative;
 
   @media (max-width: @mobile-width-only) {
     &::before {
       content: "";
       position: absolute;
-      left: -20px;
-      right: -20px;
+      left: -16px;
+      right: -16px;
       top: 0;
       height: 1px;
       background-color: @color-cards-underline;
@@ -47,6 +47,10 @@
       background-color: @color-cards-underline;
     }
   }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 10px;
+  }
 }
 
 .data-input__title {
@@ -56,25 +60,40 @@
   line-height: 26px;
   margin-bottom: 4px;
   width: 100%;
+
+  @media (min-width: @tablet-width) {
+    font-size: @font-size-extralardge;
+    margin-bottom: 8px;
+  }
 }
 
-.data-input__title_big {
-  display: grid;
-  grid-template-columns: 1fr 400px 1fr;
-  align-items: center;
-  justify-content: center;
+@media (min-width: @tablet-width) {
+  .data-input__title_big {
+    display: grid;
+    grid-template-columns: 1fr 400px 1fr;
+    align-items: center;
+    justify-content: center;
 
-  &::after,
-  &::before {
-    content: "";
-    display: block;
-    height: 1px;
-    background: @color-cards-underline;
+    &::after,
+    &::before {
+      content: "";
+      display: block;
+      height: 1px;
+      background: @color-cards-underline;
+    }
   }
 }
 
 .data-input__button {
+  font-family: @font-main;
+  font-weight: 400;
   width: 100%;
+
+  @media (min-width: @desktop-width) {
+    margin-left: 96px;
+    width: 384px;
+    margin-top: -16px;
+  }
 }
 
 .data-input__legend {
@@ -86,5 +105,11 @@
 
   @media (min-width: @tablet-width) {
     margin-top: 23px;
+    font-size: @font-size-default;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 96px;
+    margin-top: 8px;
   }
 }

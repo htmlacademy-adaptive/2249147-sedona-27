@@ -1,13 +1,23 @@
 .input-radio {
   @media (min-width: @tablet-width) {
     grid-column: 1 / -1;
+    padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 25px;
   }
 }
 
 .input-radio__title {
-  padding: 24px 0 20px;
+  padding: 0 0 20px;
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 38px;
+  }
 }
 
 .input-radio__fieldset {
   padding: 0;
+  margin: 5px;
 }

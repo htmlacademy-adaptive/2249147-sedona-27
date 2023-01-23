@@ -11,6 +11,7 @@
     <link rel="apple-touch-icon" href="images/favicons/apple.png">
     <link rel="manifest" href="manifest.webmanifest">
   </head>
+
   <body class="page__body">
     <header class="main-header">
       <a class="main-header__logo" href="index.html">
@@ -58,9 +59,9 @@
         <img class="welcome-inner__logo welcome-inner__logo--sedona" src="img/sedona.svg" width="229" height="39" alt="sedona.">
       </section>
 
-      <section class="description">
-        <h2 class="description__statement">Фото и видео</h2>
-        <p class="description__reasons">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+      <section class="description description--inner">
+        <h2 class="description__statement description__statement--inner">Фото и видео</h2>
+        <p class="description__reasons description__reasons--inner">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
       </section>
 
       <section class="catalog cards">
@@ -69,11 +70,12 @@
           <li class="cards__item">
             <a href="#">
               <picture>
-                <source media="(min-width: 1200px)" srcset="img/fotocards/photo-1-desktop.webp 1x, img/fotocards/photo-1-desktop@2x.webp 2x">
-                <source media="(min-width: 1200px)" srcset="img/fotocards/photo-1-desktop.jpg 1x, img/fotocards/photo-1-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/fotocards/photo-1-tablet.webp 1x, img/fotocards/photo-1-tablet@2x.webp 2x">
-                <source media="(min-width: 768px)" srcset="img/fotocards/photo-1-tablet.jpg 1x, img/fotocards/photo-1-tablet@2x.jpg 2x">
-                <source srcset="img/fotocards/photo-1-mobile.webp 1x, img/fotocards/photo-1-mobile@2x.webp 2x">
+                <source media="(min-width: 1200px)" type="image/webp" srcset="img/fotocards/photo-1-desktop.webp 1x, img/fotocards/photo-1-desktop@2x.webp 2x">
+                <source media="(min-width: 1200px)" type="image/jpeg" srcset="img/fotocards/photo-1-desktop.jpg 1x, img/fotocards/photo-1-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" type="image/webp" srcset="img/fotocards/photo-1-tablet.webp 1x, img/fotocards/photo-1-tablet@2x.webp 2x">
+                <source media="(min-width: 768px)" type="image/jpeg" srcset="img/fotocards/photo-1-tablet.jpg 1x, img/fotocards/photo-1-tablet@2x.jpg 2x">
+                <source type="image/webp" srcset="img/fotocards/photo-1-mobile.webp 1x, img/fotocards/photo-1-mobile@2x.webp 2x">
+                <source type="image/jpeg" srcset="img/fotocards/photo-1-mobile.jpg 1x, img/fotocards/photo-1-mobile@2x.jpg 2x">
                 <img class="cards__foto" src="img/fotocards/photo-1-mobile.jpg" srcset="img/fotocards/photo-1-mobile@2x.jpg 2x" width="280" height="280" alt="Фото Бориса.">
               </picture>
             </a>
@@ -95,11 +97,12 @@
           <li class="cards__item">
             <a href="#">
               <picture>
-                <source media="(min-width: 1200px)" srcset="img/fotocards/photo-2-desktop.webp 1x, img/fotocards/photo-2-desktop@2x.webp 2x">
-                <source media="(min-width: 1200px)" srcset="img/fotocards/photo-2-desktop.jpg 1x, img/fotocards/photo-2-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/fotocards/photo-2-tablet.webp 1x, img/fotocards/photo-2-tablet@2x.webp 2x">
-                <source media="(min-width: 768px)" srcset="img/fotocards/photo-2-tablet.jpg 1x, img/fotocards/photo-2-tablet@2x.jpg 2x">
-                <source srcset="img/fotocards/photo-2-mobile.webp 1x, img/fotocards/photo-2-mobile@2x.webp 2x">
+                <source media="(min-width: 1200px)" type="image/webp" srcset="img/fotocards/photo-2-desktop.webp 1x, img/fotocards/photo-2-desktop@2x.webp 2x">
+                <source media="(min-width: 1200px)" type="image/jpeg" srcset="img/fotocards/photo-2-desktop.jpg 1x, img/fotocards/photo-2-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" type="image/webp" srcset="img/fotocards/photo-2-tablet.webp 1x, img/fotocards/photo-2-tablet@2x.webp 2x">
+                <source media="(min-width: 768px)" type="image/jpeg" srcset="img/fotocards/photo-2-tablet.jpg 1x, img/fotocards/photo-2-tablet@2x.jpg 2x">
+                <source type="image/webp" srcset="img/fotocards/photo-2-mobile.webp 1x, img/fotocards/photo-2-mobile@2x.webp 2x">
+                <source type="image/jpeg" srcset="img/fotocards/photo-2-mobile.jpg 1x, img/fotocards/photo-2-mobile@2x.jpg 2x">
                 <img class="cards__foto" src="img/fotocards/photo-2-mobile.jpg" srcset="img/fotocards/photo-2-mobile@2x.jpg 2x" width="280" height="280" alt="Фото Сергея.">
               </picture>
             </a>
@@ -121,11 +124,12 @@
           <li class="cards__item">
             <a href="#">
               <picture>
-                <source media="(min-width: 1200px)" srcset="img/fotocards/photo-3-desktop.webp 1x, img/fotocards/photo-3-desktop@2x.webp 2x">
-                <source media="(min-width: 1200px)" srcset="img/fotocards/photo-3-desktop.jpg 1x, img/fotocards/photo-3-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/fotocards/photo-3-tablet.webp 1x, img/fotocards/photo-3-tablet@2x.webp 2x">
-                <source media="(min-width: 768px)" srcset="img/fotocards/photo-3-tablet.jpg 1x, img/fotocards/photo-3-tablet@2x.jpg 2x">
-                <source srcset="img/fotocards/photo-3-mobile.webp 1x, img/fotocards/photo-3-mobile@2x.webp 2x">
+                <source media="(min-width: 1200px)" type="image/webp" srcset="img/fotocards/photo-3-desktop.webp 1x, img/fotocards/photo-3-desktop@2x.webp 2x">
+                <source media="(min-width: 1200px)" type="image/jpeg" srcset="img/fotocards/photo-3-desktop.jpg 1x, img/fotocards/photo-3-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" type="image/webp" srcset="img/fotocards/photo-3-tablet.webp 1x, img/fotocards/photo-3-tablet@2x.webp 2x">
+                <source media="(min-width: 768px)" type="image/jpeg" srcset="img/fotocards/photo-3-tablet.jpg 1x, img/fotocards/photo-3-tablet@2x.jpg 2x">
+                <source type="image/webp" srcset="img/fotocards/photo-3-mobile.webp 1x, img/fotocards/photo-3-mobile@2x.webp 2x">
+                <source type="image/jpeg" srcset="img/fotocards/photo-3-mobile.jpg 1x, img/fotocards/photo-3-mobile@2x.jpg 2x">
                 <img class="cards__foto" src="img/fotocards/photo-3-mobile.jpg" srcset="img/fotocards/photo-3-mobile@2x.jpg 2x" width="280" height="280" alt="Фото Петра.">
               </picture>
             </a>
@@ -147,11 +151,12 @@
           <li class="cards__item">
             <a href="#">
               <picture>
-                <source media="(min-width: 1200px)" srcset="img/fotocards/photo-4-desktop.webp 1x, img/fotocards/photo-4-desktop@2x.webp 2x">
-                <source media="(min-width: 1200px)" srcset="img/fotocards/photo-4-desktop.jpg 1x, img/fotocards/photo-4-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/fotocards/photo-4-tablet.webp 1x, img/fotocards/photo-4-tablet@2x.webp 2x">
-                <source media="(min-width: 768px)" srcset="img/fotocards/photo-4-tablet.jpg 1x, img/fotocards/photo-4-tablet@2x.jpg 2x">
-                <source srcset="img/fotocards/photo-4-mobile.webp 1x, img/fotocards/photo-4-mobile@2x.webp 2x">
+                <source media="(min-width: 1200px)" type="image/webp" srcset="img/fotocards/photo-4-desktop.webp 1x, img/fotocards/photo-4-desktop@2x.webp 2x">
+                <source media="(min-width: 1200px)" type="image/jpeg" srcset="img/fotocards/photo-4-desktop.jpg 1x, img/fotocards/photo-4-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" type="image/webp" srcset="img/fotocards/photo-4-tablet.webp 1x, img/fotocards/photo-4-tablet@2x.webp 2x">
+                <source media="(min-width: 768px)" type="image/jpeg" srcset="img/fotocards/photo-4-tablet.jpg 1x, img/fotocards/photo-4-tablet@2x.jpg 2x">
+                <source type="image/webp" srcset="img/fotocards/photo-4-mobile.webp 1x, img/fotocards/photo-4-mobile@2x.webp 2x">
+                <source type="image/jpeg" srcset="img/fotocards/photo-4-mobile.jpg 1x, img/fotocards/photo-4-mobile@2x.jpg 2x">
                 <img class="cards__foto" src="img/fotocards/photo-4-mobile.jpg" srcset="img/fotocards/photo-4-mobile@2x.jpg 2x" width="280" height="280" alt="Фото Антона.">
               </picture>
             </a>
@@ -184,7 +189,7 @@
       </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer footer--inner">
       <div class="footer__wrapper">
         <div class="footer__contacts">
           <a class="footer__contacts-reference" href="#">

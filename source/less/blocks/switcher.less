@@ -18,7 +18,8 @@
 
   @media (min-width: @desktop-width) {
     grid-template-columns: repeat(3, 1fr);
-    padding: 0 53px;
+    column-gap: 17px;
+    padding: 0 0 0 53px;
   }
 }
 
@@ -26,6 +27,14 @@
   position: relative;
   display: block;
   padding: 10px 0 10px 62px;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 10px 0 10px 62px;
+  }
 }
 
 .switcher__mark {

@@ -14,11 +14,13 @@
   @media (min-width: @tablet-width) {
     grid-template-columns: repeat(2, 1fr);
     padding: 0 84px;
+    column-gap: 30px;
   }
 
   @media (min-width: @desktop-width) {
-    grid-template-columns: repeat(4, 1fr);
-    padding: 0;
+    grid-template-columns: repeat(4, auto);
+    column-gap: 64px;
+    padding: 0 44px;
   }
 }
 
@@ -26,6 +28,10 @@
   position: relative;
   display: block;
   padding: 10px 0 10px 62px;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .selector__mark {
@@ -70,4 +76,5 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+  max-width: 200px;
 }

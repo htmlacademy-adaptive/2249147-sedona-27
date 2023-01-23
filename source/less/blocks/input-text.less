@@ -8,7 +8,7 @@
 }
 
 .input-text__title {
-  padding: 24px 0 20px;
+  padding: 0 0 20px;
 }
 
 .input-text__emotions {
@@ -23,7 +23,10 @@
   padding: 16px;
   height: 150px;
   width: 100%;
+  max-width: 768px;
   box-sizing: border-box;
+  resize: none;
+  margin: 0 auto 18px;
 
   &:hover {
     background-color: @color-field-hover;
@@ -33,4 +36,13 @@
     background-color: @color-background;
     outline: 4px solid @color-field-hover;
   }
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 6px;
+    height: 160px;
+  }
+
+  // @media (min-width: @desktop-width) {
+  //   margin: 0 52px 10px;
+  // }
 }

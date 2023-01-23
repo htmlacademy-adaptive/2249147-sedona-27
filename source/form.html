@@ -10,6 +10,7 @@
     <link rel="apple-touch-icon" href="images/favicons/apple.png">
     <link rel="manifest" href="manifest.webmanifest">
   </head>
+
   <body class="page__body">
     <header class="main-header">
       <a class="main-header__logo" href="index.html">
@@ -57,9 +58,9 @@
         <img class="welcome-inner__logo welcome-inner__logo--sedona" src="img/sedona.svg" width="230" height="40" alt="sedona.">
       </section>
 
-      <section class="description">
-        <h2 class="description__statement">Оставьте свой отзыв</h2>
-        <p class="description__reasons">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      <section class="description description--form">
+        <h2 class="description__statement description__statement--inner">Оставьте свой отзыв</h2>
+        <p class="description__reasons description__reasons--inner">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </section>
 
       <section class="review">
@@ -169,17 +170,21 @@
               <textarea class="input-text__emotions" name="emotions-comment" placeholder="Опишите подробно все свои восторги"></textarea>
             </li>
 
+            <li>
               <button class="data-input__button button" type="submit">Отправить отзыв</button>
+            </li>
 
+            <li>
               <span class="data-input__legend">
                 * — обязательные поля
               </span>
+            </li>
           </ul>
         </form>
       </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer footer--inner">
       <div class="footer__wrapper">
         <div class="footer__contacts">
           <a class="footer__contacts-reference" href="#">
