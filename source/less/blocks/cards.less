@@ -22,6 +22,10 @@
   padding: 24px 0;
   position: relative;
 
+  &:first-child br {
+    display: none;
+  }
+
   @media (max-width: @mobile-width-only) {
     &::before {
       content: "";
@@ -46,10 +50,26 @@
 
   @media (min-width: @tablet-width) {
     padding: 0;
+
+    &:first-child br {
+      display: inline;
+    }
   }
 
   &:first-child {
     grid-column: 1 / -1;
+  }
+
+  &:first-child .cards__title {
+    @media (min-width: @tablet-width) and (max-width: @tablet-width-only) {
+      margin-top: -20px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &:first-child br {
+      display: none;
+    }
   }
 }
 
@@ -76,7 +96,7 @@
 
   @media (min-width: @tablet-width) {
     background-color: @color-back;
-    padding: 22px 20px 15px;
+    padding: 22px 20px 5px;
     margin-top: 0;
     display: flex;
     justify-content: space-between;
@@ -100,12 +120,12 @@
 }
 
 .cards__name-container {
-  margin-bottom: 11px;
+  margin-bottom: 8px;
 }
 
 .cards__title {
   margin: 0;
-  margin-bottom: 1px;
+  margin-bottom: 2px;
   font-weight: 700;
 }
 
@@ -124,6 +144,10 @@
   display: flex;
   align-items: center;
   justify-content: start;
+
+  @media (min-width: @tablet-width) {
+    align-items: flex-start;
+  }
 }
 
 .cards__likes-button {
@@ -138,6 +162,11 @@
   outline: none;
   cursor: pointer;
   margin-right: 14px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 6px;
+    padding-left: 5px;
+  }
 }
 
 .cards__likes-icon {

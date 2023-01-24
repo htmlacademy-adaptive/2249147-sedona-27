@@ -1,216 +1,220 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="images/favicons/apple.png">
     <link rel="manifest" href="manifest.webmanifest">
   </head>
 
-  <body class="page">
-    <div class="page__body">
-      <header class="main-header">
-        <a class="main-header__logo" href="index.html">
-          <img class="main-header__logo-image" src="img/logo-header-sedona.svg" width="185" height="96" alt="Городок «Седона».">
-        </a>
+  <body class="page__body">
+    <header class="main-header">
+      <a class="main-header__logo" href="index.html">
+        <img class="main-header__logo-image" src="img/logo-header-sedona.svg" width="185" height="96" alt="Городок «Седона».">
+      </a>
 
-        <nav class="main-nav main-nav--nojs">
-          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню.</span></button>
+      <nav class="main-nav main-nav--nojs">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню.</span></button>
 
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__list site-list">
-              <li class="site-list__item site-list__item--main site-list__item--current">
-                <a>
-                  Главная
-                </a>
-              </li>
-
-              <li class="site-list__item site-list__item--catalog">
-                <a href="catalog.html">
-                  Фото и видео
-                </a>
-              </li>
-
-              <li class="site-list__item site-list__item--form">
-                <a href="form.html">
-                  Форма Отзыва
-                </a>
-              </li>
-
-              <li class="site-list__item site-list__item--htmlacademy">
-                <a href="https://htmlacademy.ru/intensive/adaptive">
-                  HTML ACADEMY
-                </a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </header>
-
-      <main class="main-contaner">
-        <h1 class="visually-hidden">Городок Седона.</h1>
-
-        <section class="welcome welcome-main">
-          <h2 class="visually-hidden">Приветствие.</h2>
-          <img class="welcome-main__logo welcome-main__logo--welcome" src="img/welcome.svg" width="115" height="28" alt="welcome.">
-          <img class="welcome-main__logo welcome-main__logo--tothegorgeous" src="img/tothegorgeous.svg" width="158" height="18" alt="to the gorgeus.">
-          <img class="welcome-main__logo welcome-main__logo--sedona" src="img/sedona.svg" width="282" height="49" alt="sedona.">
-          <img class="welcome-main__logo welcome-main__logo--because" src="img/because.svg" width="180" height="49" alt="because.">
-        </section>
-
-        <section class="description">
-          <h2 class="description__statement">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
-          <p class="description__reasons">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
-        </section>
-
-        <section class="advantages approval">
-          <h2 class="visually-hidden">Преимущества.</h2>
-          <ul class="approval__list">
-            <li class="approval__item approval__item--extreme approval__item--extreme-right">
-              <div class="approval__container approval__container--extreme">
-                <h3 class="approval__title">Настоящий<br> городок</h3>
-                <span class="approval__number">— №1 —</span>
-                <p class="approval__description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-              </div>
-              <picture>
-                <source media="(min-width: 1200px)" srcset="img/photo-city-desktop.jpg 1x, img/photo-city-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/photo-city-tablet.jpg 1x, img/photo-city-tablet@2x.jpg 2x">
-                <img class="approval__image approval__image--city" src="img/photo-city-mobile.jpg" srcset="img/photo-city-mobile@2x.jpg 2x" width="320" height="260" alt="Фото домов городка Седона.">
-              </picture>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--main site-list__item--current">
+              <a href="index.html">
+                Главная
+              </a>
             </li>
 
-            <li class="approval__item approval__item--action">
-              <div class="approval__container approval__container--housing">
-                <h3 class="approval__title">Жильё</h3>
-                <p class="approval__description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-              </div>
+            <li class="site-list__item site-list__item--catalog">
+              <a href="catalog.html">
+                Фото и видео
+              </a>
             </li>
 
-            <li class="approval__item approval__item--action">
-              <div class="approval__container approval__container--eating">
-                  <h3 class="approval__title">Еда</h3>
-                  <p class="approval__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-              </div>
+            <li class="site-list__item site-list__item--form">
+              <a href="form.html">
+                Форма Отзыва
+              </a>
             </li>
 
-            <li class="approval__item approval__item--action approval__item--action-last">
-              <div class="approval__container approval__container--souvenir">
-                  <h3 class="approval__title">Сувениры</h3>
-                  <p class="approval__description">Не только китайского, но и местного производства!</p>
-              </div>
-            </li>
-
-            <li class="approval__item approval__item--extreme approval__item--extreme-left">
-              <picture>
-                <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
-                <img class="approval__image approval__image--bridge" src="img/photo-bridge-mobile.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" width="320" height="260" alt="Фото панорамы «Моста дьявола».">
-              </picture>
-              <div class="approval__container approval__container--extreme">
-                <h3 class="approval__title">Там есть<br> мост дьявола</h3>
-                <span class="approval__number">— №2 —</span>
-                <p class="approval__description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-              </div>
-            </li>
-
-            <li class="approval__item approval__item--regular">
-              <div class="approval__container">
-                <h3 class="approval__title">Небольшая<br> площадь</h3>
-                <span class="approval__number">— №3 —</span>
-                <p class="approval__description">Все интересные места находятся очень близко</p>
-              </div>
-            </li>
-
-            <li class="approval__item approval__item--regular">
-              <div class="approval__container">
-                <h3 class="approval__title">Красивая<br> дорога</h3>
-                <span class="approval__number">— №4 —</span>
-                <p class="approval__description">Ехать в Седону из Лас-Вегаса совсем<br> не скучно!</p>
-              </div>
-            </li>
-
-            <li class="approval__item approval__item--regular">
-              <div class="approval__container">
-                <h3 class="approval__title">Мало<br> туристов</h3>
-                <span class="approval__number">— №5 —</span>
-                <p class="approval__description">Большинство едет в Гранд Каньон и толпится там</p>
-              </div>
+            <li class="site-list__item site-list__item--htmlacademy">
+              <a href="https://htmlacademy.ru/intensive/adaptive">
+                HTML ACADEMY
+              </a>
             </li>
           </ul>
-        </section>
-
-        <section class="interest">
-          <h2 class="interest__statement">Заинтересовались?</h2>
-          <p class="interest__reasons">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <a class="interest__button button" href="#">Найти гостиницу</a>
-        </section>
-
-        <section class="map">
-          <h2 class="visually-hidden">Карта местонахождения городка Седона.</h2>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1671254.6167623568!2d-112.55594214544222!3d35.10248633970552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1671320116351!5m2!1sru!2sru"
-            width="100%"
-            height="350px"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade">
-          </iframe>
-        </section>
-      </main>
-
-      <footer class="footer">
-        <div class="footer__wrapper">
-          <div class="footer__contacts">
-            <a class="footer__contacts-reference" href="#">
-              #visitSEDONA
-            </a>
-          </div>
-
-          <div class="footer__social social">
-            <ul class="social__list">
-              <li class="social__item">
-                <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-                  <svg class="social__icon" width="24" height="24">
-                    <use xlink:href="./img/sprite.svg#icon-vk"></use>
-                  </svg>
-                  <span class="visually-hidden">ВКонтакте.</span>
-                </a>
-              </li>
-              <li class="social__item">
-                <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
-                  <svg class="social__icon" width="24" height="24">
-                    <use xlink:href="./img/sprite.svg#icon-telegram"></use>
-                  </svg>
-                  <span class="visually-hidden">Telegram.</span>
-                </a>
-              </li>
-              <li class="social__item">
-                <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
-                  <svg class="social__icon" width="24" height="24">
-                    <use xlink:href="./img/sprite.svg#icon-youtube"></use>
-                  </svg>
-                  <span class="visually-hidden">YouTube.</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="footer__copyright copyright">
-            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-              <b class="copyright__text">Разработано</b>
-              <svg class="copyright__icon" width="32" height="32">
-                <use xlink:href="./img/sprite.svg#icon-htmlacademy"></use>
-              </svg>
-              <span class="visually-hidden">HTML Academy.</span>
-            </a>
-          </div>
         </div>
-      </footer>
-    </div>
+      </nav>
+    </header>
 
-    <script src="script.js"></script>
+    <main class="main-contaner">
+      <h1 class="visually-hidden">Городок Седона.</h1>
+
+      <section class="welcome welcome-main">
+        <h2 class="visually-hidden">Приветствие.</h2>
+        <img class="welcome-main__logo welcome-main__logo--welcome" src="img/welcome.svg" width="115" height="28" alt="welcome.">
+        <img class="welcome-main__logo welcome-main__logo--tothegorgeous" src="img/tothegorgeous.svg" width="158" height="18" alt="to the gorgeus.">
+        <img class="welcome-main__logo welcome-main__logo--sedona" src="img/sedona.svg" width="282" height="49" alt="sedona.">
+        <img class="welcome-main__logo welcome-main__logo--because" src="img/because.svg" width="180" height="49" alt="because.">
+      </section>
+
+      <section class="description">
+        <h2 class="description__statement">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+        <p class="description__reasons">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+      </section>
+
+      <section class="advantages approval">
+        <h2 class="visually-hidden">Преимущества.</h2>
+        <ul class="approval__list">
+          <li class="approval__item approval__item--extreme approval__item--extreme-right">
+            <div class="approval__container approval__container--extreme">
+              <h3 class="approval__title">Настоящий<br> городок</h3>
+              <span class="approval__number">— №1 —</span>
+              <p class="approval__description">Седона не аттракцион для туристов,<br> там течёт своя жизнь</p>
+            </div>
+            <picture>
+              <source media="(min-width: 1200px)" type="image/webp" srcset="img/photo-city-desktop.webp 1x, img/photo-city-desktop@2x.webp 2x">
+              <source media="(min-width: 1200px)" type="image/jpeg" srcset="img/photo-city-desktop.jpg 1x, img/photo-city-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" type="image/webp" srcset="img/photo-city-tablet.webp 1x, img/photo-city-tablet@2x.webp 2x">
+              <source media="(min-width: 768px)" type="image/jpeg" srcset="img/photo-city-tablet.jpg 1x, img/photo-city-tablet@2x.jpg 2x">
+              <source type="image/webp" srcset="img/photo-city-mobile.webp 1x, img/photo-city-mobile@2x.webp 2x">
+              <source type="image/jpeg" srcset="img/photo-city-mobile.jpg 1x, img/photo-city-mobile@2x.jpg 2x">
+              <img class="approval__image approval__image--city" src="img/photo-city-mobile.jpg" srcset="img/photo-city-mobile@2x.webp 2x" width="320" height="260" alt="Фото домов городка Седона.">
+            </picture>
+          </li>
+
+          <li class="approval__item approval__item--action">
+            <div class="approval__container approval__container--housing">
+              <h3 class="approval__title">Жильё</h3>
+              <p class="approval__description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+            </div>
+          </li>
+
+          <li class="approval__item approval__item--action">
+            <div class="approval__container approval__container--eating">
+                <h3 class="approval__title">Еда</h3>
+                <p class="approval__description">Всегда заказывайте фирменный бургер,<br> вы не разочаруетесь!</p>
+            </div>
+          </li>
+
+          <li class="approval__item approval__item--action approval__item--action-last">
+            <div class="approval__container approval__container--souvenir">
+                <h3 class="approval__title">Сувениры</h3>
+                <p class="approval__description">Не только китайского,<br> но и местного производства!</p>
+            </div>
+          </li>
+
+          <li class="approval__item approval__item--extreme approval__item--extreme-left">
+            <picture>
+              <source media="(min-width: 1200px)" type="image/webp" srcset="img/photo-bridge-desktop.webp 1x, img/photo-bridge-desktop@2x.webp 2x">
+              <source media="(min-width: 1200px)" type="image/jpeg" srcset="img/photo-bridge-desktop.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" type="image/webp" srcset="img/photo-bridge-tablet.webp 1x, img/photo-bridge-tablet@2x.webp 2x">
+              <source media="(min-width: 768px)" type="image/jpeg" srcset="img/photo-bridge-tablet.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+              <source type="image/webp" srcset="img/photo-bridge-mobile.webp 1x, img/photo-bridge-mobile@2x.webp 2x">
+              <source type="image/jpeg" srcset="img/photo-bridge-mobile.jpg 1x, img/photo-bridge-mobile@2x.jpg 2x">
+              <img class="approval__image approval__image--bridge" src="img/photo-bridge-mobile.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" width="320" height="260" alt="Фото панорамы «Моста дьявола».">
+            </picture>
+            <div class="approval__container approval__container--extreme">
+              <h3 class="approval__title">Там есть<br> мост дьявола</h3>
+              <span class="approval__number">— №2 —</span>
+              <p class="approval__description">Да, по нему можно пройти!<br> Если вы осмелитесь, конечно</p>
+            </div>
+          </li>
+
+          <li class="approval__item approval__item--regular">
+            <div class="approval__container">
+              <h3 class="approval__title">Небольшая<br> площадь</h3>
+              <span class="approval__number">— №3 —</span>
+              <p class="approval__description">Все интересные места находятся очень близко</p>
+            </div>
+          </li>
+
+          <li class="approval__item approval__item--regular">
+            <div class="approval__container">
+              <h3 class="approval__title">Красивая<br> дорога</h3>
+              <span class="approval__number">— №4 —</span>
+              <p class="approval__description">Ехать в Седону из Лас-Вегаса совсем<br> не скучно!</p>
+            </div>
+          </li>
+
+          <li class="approval__item approval__item--regular">
+            <div class="approval__container">
+              <h3 class="approval__title">Мало<br> туристов</h3>
+              <span class="approval__number">— №5 —</span>
+              <p class="approval__description">Большинство едет в Гранд Каньон и толпится там</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="interest">
+        <h2 class="interest__statement">Заинтересовались?</h2>
+        <p class="interest__reasons">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <a class="interest__button button" href="#">Найти гостиницу</a>
+      </section>
+
+      <section class="map">
+        <h2 class="visually-hidden">Карта местонахождения городка Седона.</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1671254.6167623568!2d-112.55594214544222!3d35.10248633970552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1671320116351!5m2!1sru!2sru"
+          width="320"
+          height="350"
+          allowfullscreen
+        ></iframe>
+      </section>
+    </main>
+
+    <footer class="footer footer--inner">
+      <div class="footer__wrapper">
+        <div class="footer__contacts">
+          <a class="footer__contacts-reference" href="#">
+            #visitSEDONA
+          </a>
+        </div>
+
+        <div class="footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+                <svg class="social__icon" width="24" height="24">
+                  <use xlink:href="./img/sprite.svg#icon-vk"></use>
+                </svg>
+                <span class="visually-hidden">ВКонтакте.</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+                <svg class="social__icon" width="24" height="24">
+                  <use xlink:href="./img/sprite.svg#icon-telegram"></use>
+                </svg>
+                <span class="visually-hidden">Telegram.</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+                <svg class="social__icon" width="24" height="24">
+                  <use xlink:href="./img/sprite.svg#icon-youtube"></use>
+                </svg>
+                <span class="visually-hidden">YouTube.</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__copyright copyright">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <b class="copyright__text">Разработано</b>
+            <svg class="copyright__icon" width="34" height="34">
+              <use xlink:href="./img/sprite.svg#icon-htmlacademy"></use>
+            </svg>
+            <span class="visually-hidden">HTML Academy.</span>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
   </body>
 </html>

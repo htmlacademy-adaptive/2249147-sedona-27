@@ -13,8 +13,8 @@
 .approval__item {
   &:first-child {
     @media (max-width: @mobile-width-only) {
-      clip-path: polygon(0 0, 50% 5%, 100% 0, 100% 100%, 0 100%);
-      padding-top: calc(5% + 33px);
+      clip-path: polygon(0 0, 50% 3%, 100% 0, 100% 100%, 0 100%);
+      padding-top: 12px;
     }
   }
 
@@ -26,6 +26,12 @@
       grid-column: 1 / -1;
       display: grid;
     }
+
+    @media (max-width: @tablet-width-only) {
+      br {
+        display: none;
+      }
+    }
   }
 
   &--extreme-right {
@@ -35,6 +41,11 @@
   }
 
   &--extreme-left {
+    @media (max-width: @mobile-width-only) {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
     @media (min-width: @tablet-width) {
       grid-template-columns: 2fr 1fr;
     }
@@ -42,7 +53,7 @@
 
   &--action {
     text-align: left;
-    padding: 23px 18px 2px;
+    padding: 23px 18px 4px;
 
     @media (min-width: @tablet-width) {
       text-align: center;
@@ -56,7 +67,7 @@
 
   &--regular {
     background-color: @color-advantages;
-    padding: 24px 18px;
+    padding: 24px 32px;
     position: relative;
     display: flex;
     justify-content: center;
@@ -84,7 +95,7 @@
 }
 
 .approval__container--extreme {
-  padding: 37px 18px;
+  padding: 37px 18px 40px;
 
   @media (min-width: @tablet-width) {
     padding: 42px 33px;
@@ -127,13 +138,13 @@
 
   @media (min-width: @tablet-width) {
     padding-left: 0;
-    padding-top: 94px;
+    padding-top: 92px;
     background-size: 80px 80px;
     background-position: top center;
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 100px;
+    padding-top: 96px;
   }
 }
 
@@ -157,17 +168,26 @@
 
   @media (min-width: @tablet-width) {
     font-size: @font-size-extralardge;
+    padding: 0 20px;
   }
 }
 
 .approval__number {
   margin: 0;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .approval__description {
   margin: 0;
-  margin-top: 15px;
+  margin-top: 16px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 26px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 8px;
+  }
 }
 
 @media (max-width: @mobile-width-only) {

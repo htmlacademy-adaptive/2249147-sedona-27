@@ -1,19 +1,39 @@
 .catching-up-block {
-  padding: 17px 20px 0;
+  padding: 19px 20px 0;
 
   @media (min-width: @tablet-width) {
     padding: 62px 60px 40px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 62px 200px 120px;
+    padding: 62px 200px 87px;
   }
 }
 
 .catching-up-block__statement {
+  margin: 0;
   font-weight: 700;
-  font-size: 21px;
+  font-size: 18px;
   line-height: 26px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+  }
+}
+
+.catching-up-block__reasons {
+  margin: 0;
+  margin-top: 27px;
+  padding: 0 6px;
+  margin-bottom: 37px;
+
+  @media (min-width: @tablet-width) {
+    padding: 7px 100px 46px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 4px 170px 46px;
+  }
 }
 
 .catching-up-block__video {

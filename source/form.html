@@ -4,28 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="images/favicons/apple.png">
     <link rel="manifest" href="manifest.webmanifest">
   </head>
-  <body class="page__body">
-    <svg style="display: none;">
-      <symbol viewBox="0 0 24 24" id="icon-vk">
-        <g clip-path="url(#a)"><path fill-rule="evenodd" clip-rule="evenodd" d="M23.4 6c.2-.6 0-1-.7-1H20c-.6 0-1 .3-1.1.7 0 0-1.3 3.2-3.2 5.3-.7.6-1 .8-1.3.8-.1 0-.4-.2-.4-.7V5.9c0-.6-.2-.9-.7-.9H9.2c-.5 0-.7.3-.7.6 0 .6 1 .8 1 2.5V12c0 .8-.1 1-.5 1-.9 0-3-3.2-4.3-6.9-.3-.7-.5-1-1.2-1H1c-.8 0-.9.3-.9.7 0 .7.9 4.1 4.1 8.6 2.2 3 5.3 4.7 8 4.7 1.7 0 2-.4 2-1v-2.3c0-.8 0-.9.6-.9.4 0 1 .2 2.6 1.7 1.8 1.7 2.1 2.5 3.1 2.5H23c.8 0 1.2-.4 1-1.1-.3-.7-1.1-1.8-2.3-3L20 13c-.4-.5-.3-.7 0-1.1 0 0 3.2-4.4 3.5-6Z"/></g><defs><clipPath id="a"><path d="M0 0h24v24H0z"/></clipPath></defs>
-      </symbol>
-      <symbol  viewBox="0 0 24 24" id="icon-telegram">
-        <path d="m22.4 4.6-3.1 15c-.3 1-.9 1.3-1.8.8l-4.8-3.6-2.3 2.3c-.3.2-.5.4-1 .4l.3-4.9 9-8c.4-.4-.1-.6-.6-.3l-11 7-4.8-1.5c-1-.3-1-1 .2-1.5L21 3c.9-.3 1.6.2 1.3 1.5Z"/>
-      </symbol>
-      <symbol  viewBox="0 0 24 24" id="icon-youtube">
-        <path d="M19.2 5H4.8A2.9 2.9 0 0 0 2 7.8v8.3C2 17.7 3.3 19 4.8 19h14.4c1.6 0 2.8-1.3 2.8-2.8V7.8C22 6.3 20.8 5 19.2 5ZM9 15.4V8.6L16 12 9 15.4Z"/>
-      </symbol>
-      <symbol viewBox="0 0 32 32" id="icon-htmlacademy">
-        <path d="M16.1 2 4 3.2v21L16 31l12-6.8v-21L16.1 2Zm10.2 10.3L16 6.5l-.1-.2v.1L5.7 12.3V4.6l10.3-1 10.3 1v7.7ZM16 7.8l10.2 5.7-4 2.2-6.3-3.6v1.2l5.2 3-.8.4-4.4-2.5v1.2l3.4 2-.8.3-2.6-1.5v1.2l1.7 1-1.6.9-10.2-5.7L16 7.8Zm-10.3 7 10.2 5.8v.9l-7-4v1.2l7 4v1l-7-4v1.2l7 4 7.3-4.1v-4.4l3-1.7v8.5L16 29 5.7 23.3v-8.5Z"/>
-      </symbol>
-    </svg>
 
+  <body class="page__body">
     <header class="main-header">
       <a class="main-header__logo" href="index.html">
         <img class="main-header__logo-image" src="img/logo-header-sedona.svg" width="185" height="96" alt="Городок «Седона».">
@@ -72,9 +58,9 @@
         <img class="welcome-inner__logo welcome-inner__logo--sedona" src="img/sedona.svg" width="230" height="40" alt="sedona.">
       </section>
 
-      <section class="description">
-        <h2 class="description__statement">Оставьте свой отзыв</h2>
-        <p class="description__reasons">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      <section class="description description--form">
+        <h2 class="description__statement description__statement--inner">Оставьте свой отзыв</h2>
+        <p class="description__reasons description__reasons--inner">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </section>
 
       <section class="review">
@@ -105,7 +91,7 @@
               <p class="input-contacts__group">
                 <label class="input-contacts__label" for="review-phone">
                   Контактный телефон*:</label>
-                <input class="field input-contacts__field-phone" type="text" id="review-phone" name="review-phone" placeholder="Введите телефон">
+                <input class="field input-contacts__field-phone" type="tel" id="review-phone" name="review-phone" placeholder="Введите телефон">
               </p>
               <p class="input-contacts__group">
                 <label class="input-contacts__label" for="review-e-mail">
@@ -144,7 +130,7 @@
             </li>
 
             <li class="data-input__item input-checkbox">
-              <h3 class="data-input__title data-input__title_big input-checkbox__title">Посещенные достопримечательности:</h3>
+              <h3 class="data-input__title data-input__title_big input-checkbox__title">Посещенные<br>достопримечательности:</h3>
               <fieldset class="input-checkbox__fieldset selector">
                 <ul class="selector__list">
                   <li class="selector__item">
@@ -184,17 +170,21 @@
               <textarea class="input-text__emotions" name="emotions-comment" placeholder="Опишите подробно все свои восторги"></textarea>
             </li>
 
+            <li>
               <button class="data-input__button button" type="submit">Отправить отзыв</button>
+            </li>
 
+            <li>
               <span class="data-input__legend">
                 * — обязательные поля
               </span>
+            </li>
           </ul>
         </form>
       </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer footer--inner">
       <div class="footer__wrapper">
         <div class="footer__contacts">
           <a class="footer__contacts-reference" href="#">
@@ -207,7 +197,7 @@
             <li class="social__item">
               <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
                 <svg class="social__icon" width="24" height="24">
-                  <use xlink:href="#icon-vk"></use>
+                  <use xlink:href="./img/sprite.svg#icon-vk"></use>
                 </svg>
                 <span class="visually-hidden">ВКонтакте.</span>
               </a>
@@ -215,7 +205,7 @@
             <li class="social__item">
               <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
                 <svg class="social__icon" width="24" height="24">
-                  <use xlink:href="#icon-telegram"></use>
+                  <use xlink:href="./img/sprite.svg#icon-telegram"></use>
                 </svg>
                 <span class="visually-hidden">Telegram.</span>
               </a>
@@ -223,7 +213,7 @@
             <li class="social__item">
               <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
                 <svg class="social__icon" width="24" height="24">
-                  <use xlink:href="#icon-youtube"></use>
+                  <use xlink:href="./img/sprite.svg#icon-youtube"></use>
                 </svg>
                 <span class="visually-hidden">YouTube.</span>
               </a>
@@ -234,8 +224,8 @@
         <div class="footer__copyright copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <b class="copyright__text">Разработано</b>
-            <svg class="copyright__icon" width="32" height="32">
-              <use xlink:href="#icon-htmlacademy"></use>
+            <svg class="copyright__icon" width="34" height="34">
+              <use xlink:href="./img/sprite.svg#icon-htmlacademy"></use>
             </svg>
             <span class="visually-hidden">HTML Academy.</span>
           </a>
@@ -243,6 +233,28 @@
       </div>
     </footer>
 
-    <script src="script.js"></script>
+    <div class="modal modal__error modal__error--close">
+      <div class="modal__container">
+        <h2 class="modal__title">Что-то пошло не так!</h2>
+        <p class="modal__information">
+          Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+        </p>
+        <button class="button modal__button" type="button">Найти</button>
+      </div>
+    </div>
+
+    <div class="modal modal__accept modal__accept--close">
+      <div class="modal__container">
+        <h2 class="modal__title">Ваш отзыв отправлен!</h2>
+        <p class="modal__information">
+          Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте
+        </p>
+        <div class="modal__button-container">
+          <button class="button modal__button" type="button">Закрыть окно</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/script.js"></script>
   </body>
 </html>
