@@ -55,6 +55,11 @@
   background-color: @color-field-active;
 }
 
+.switcher__input:focus ~ .switcher__mark {
+  background-color: @color-field-active;
+  outline: 2px solid @color-text-main;
+}
+
 .switcher__input:checked + .switcher__mark::before {
   position: absolute;
   top: 15px;
