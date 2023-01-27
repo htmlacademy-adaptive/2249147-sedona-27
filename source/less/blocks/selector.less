@@ -52,6 +52,10 @@
   background-color: @color-field-active;
 }
 
+.selector__input:focus ~ .selector__mark {
+  outline: 2px solid @color-text-main;
+}
+
 .selector__input:active ~ .selector__mark::after {
   opacity: 0.3;
 }
